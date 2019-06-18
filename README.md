@@ -20,6 +20,15 @@ You're app is in the development phase and you don't want to recompile a new ver
 ### Staging
 While the app is still in test phase it can be rolled out very quickly by just switching ip's from staging to production web server.
 
+## Usage
+While developing your app you can run a simple web server with this command inside of your source folder: `python3 -m http.server`  
+This webserver will serve your Python and QML files at http://0.0.0.0:8000 by default.
+You can start the loader wth this command: `python3 main.py`
+The first time you are starting the loader a dialog pops up where you have to enter the above url and a module name like "app.py".  
+On the second run your app should be loaded automatically.  
+To reset the url and the module name you just have to stop the server so that the client is asking for an url and module name again.  
+
+
 ## Motivation
 Currently I am writing a book about Python and PyQt5 and I am struggling to get a demo app to compile and package for Android. That's why I had the idea to build this app. So now I don't have to build this app again and again just to see if my code is running well on my mobile. And this is also true for the readers of my book. This app is also for them.  
 The other point is that I have worked for banks a couple of years and there it took weeks to get a new version of a desktop app to be shipped. Even emergency bugfixes took days to roll out. There still was the idea to build all these bank apps as web applications, but...  

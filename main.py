@@ -1,8 +1,8 @@
 import sys
 import httpimport
-from PyQt5.QtWidgets import QDialog, QLineEdit, QLabel, QApplication, QVBoxLayout, QHBoxLayout, QGridLayout, QPushButton
+from PyQt5.QtWidgets import QMessageBox, QDialog, QLineEdit, QLabel, QApplication, QVBoxLayout, QHBoxLayout, QGridLayout, QPushButton
 from PyQt5.QtGui import QPixmap
-from PyQt5.QtCore import Qt
+from PyQt5.QtCore import Qt, QSettings
 
 class SetupDialog(QDialog):
     def __init__(self):
@@ -54,20 +54,58 @@ class SetupDialog(QDialog):
     def cancelClicked(self):
         self.close()
 
-if __name__ == "__main__":
-    app = QApplication(sys.argv)
-    dlg = SetupDialog()
-    dlg.exec()
 
-    if dlg.url:
-        url = dlg.url
-        mod = dlg.mod
-        if mod.endswith(".py"):
-            mod = mod[0:-3]
-        app.exit()
+def readSettings():
+    settings = QSettings(QSettings.IniFormat, QSettings.UserScope, "Artanidos", "DynPy")   
+    url = settings.value("url")
+    mod = settings.value("mod")
+    return url, mod
+    
+def writeSettings(url, mod):
+    settings = QSettings(QSettings.IniFormat, QSettings.UserScope, "Artanidos", "DynPy")
+    settings.setValue("url", url)
+    settings.setValue("mod", mod)
 
+
+class Main:
+    def __init__(self):
+        url, mod = readSettings()
+        if url and mod:
+            self.load(url, mod)
+        else:
+            dlg = SetupDialog()
+            dlg.exec()
+
+            if dlg.url:
+                url = dlg.url
+                mod = dlg.mod
+                if mod.endswith(".py"):
+                    mod = mod[0:-3]
+                writeSettings(url, mod)
+                #app.exit()
+
+                self.load(url, mod)
+
+    def load(self, url, mod):
         # use only for localhost
+        # in production use ssl via https://...
         httpimport.INSECURE = True
 
-        with httpimport.remote_repo([mod], url):
-            import test_package
+        try:
+            httpimport.load(mod, url)
+    
+        except ImportError:
+            mb = QMessageBox()
+            mb.setWindowTitle("DynPy")
+            mb.setText("Module <b>" + mod + "</b> could not be loaded.\nPlease check if your web server is running.\nAnd restart the app.")
+            mb.exec()
+
+            # reseting the url and mod, so next start setup dialog will be displayed
+            writeSettings("", "")
+            sys.exit(-1)
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    Main()
+    app.exec()
+    
