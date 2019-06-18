@@ -24,6 +24,11 @@ While the app is still in test phase it can be rolled out very quickly by just s
 You can use this app also in a non Python environment to just design and test your QML user interfaces.  
 This app is like a web browser but it feels more like a desktop application.
 
+### Github
+Also a funny is the fact that you can load Python file directly from github.  
+Try this url: https://raw.githubusercontent.com/Artanidos/DynPy/master/server/  
+This url points to the server directory inside of this repo.
+
 ## Usage
 While developing your app you can run a simple web server with this command inside of your source folder: `python3 -m http.server`  
 This webserver will serve your Python and QML files at http://0.0.0.0:8000 by default.
@@ -31,11 +36,6 @@ You can start the loader wth this command: `python3 main.py`
 The first time you are starting the loader a dialog pops up where you have to enter the above url and a module name like "app.py".  
 On the second run your app should be loaded automatically.  
 To reset the url and the module name you just have to stop the server so that the client is asking for an url and module name again.  
-
-## Github
-Also a funny is the fact that you can load Python file directly from github.  
-Try this url: https://raw.githubusercontent.com/Artanidos/DynPy/master/server/  
-This url points to the server directory inside of this repo.
 
 
 ## Motivation
