@@ -11,7 +11,7 @@ def loaded(object, url):
 
 app = QGuiApplication(sys.argv)
 engine = QQmlApplicationEngine()
-engine.load(QUrl("http://0.0.0.0:8000/view.qml"))
+engine.load(QUrl("https://github.com/Artanidos/DynPy/raw/master/server/"))
 engine.objectCreated.connect(loaded)
 sys.exit(app.exec_())
     
