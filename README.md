@@ -2,7 +2,7 @@
 
 ![screenshot](dialog.png)
 
-DynPy is an application loader that dynamically loads python and QML files over the internet and executes them.  
+DynPy is an application loader that dynamically loads Python and QML files over the internet and executes them.  
 The fun part is, that DynPy is shipped with Qt5, PyQT5 and a few other modules so that it's possible to create GUI applications without the need to recompile and package them.   
 
 If you ever had packaged a Python app for Android or iOS you know what I mean.
@@ -19,6 +19,10 @@ You're app is in the development phase and you don't want to recompile a new ver
 
 ### Staging
 While the app is still in test phase it can be rolled out very quickly by just switching ip's from staging to production web server.
+
+### QML Design
+You can use this app also in a non Python environment to just design and test your QML user interfaces.  
+This app is like a web browser but it feels more like a desktop application.
 
 ## Usage
 While developing your app you can run a simple web server with this command inside of your source folder: `python3 -m http.server`  
