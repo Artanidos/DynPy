@@ -37,3 +37,12 @@ To reset the url and the module name you just have to stop the server so that th
 Currently I am writing a book about Python and PyQt5 and I am struggling to get a demo app to compile and package for Android. That's why I had the idea to build this app. So now I don't have to build this app again and again just to see if my code is running well on my mobile. And this is also true for the readers of my book. This app is also for them.  
 The other point is that I have worked for banks a couple of years and there it took weeks to get a new version of a desktop app to be shipped. Even emergency bugfixes took days to roll out. There still was the idea to build all these bank apps as web applications, but...  
 ...the only good thing about web apps is that they can be deployed to millions of customers in seconds.
+
+
+## Contact
+If you have any feature requests then just send me an email with your ideas to artanidos@gmail.com
+
+## Donations
+If you like to support my work you are invited to make a donation.
+
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/artanidos)
