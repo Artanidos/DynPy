@@ -32,6 +32,11 @@ The first time you are starting the loader a dialog pops up where you have to en
 On the second run your app should be loaded automatically.  
 To reset the url and the module name you just have to stop the server so that the client is asking for an url and module name again.  
 
+## Github
+Also a funny is the fact that you can load Python file directly from github.  
+Try this url: https://raw.githubusercontent.com/Artanidos/DynPy/master/server/  
+This url points to the server directory inside of this repo.
+
 
 ## Motivation
 Currently I am writing a book about Python and PyQt5 and I am struggling to get a demo app to compile and package for Android. That's why I had the idea to build this app. So now I don't have to build this app again and again just to see if my code is running well on my mobile. And this is also true for the readers of my book. This app is also for them.  
