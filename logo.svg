@@ -9,13 +9,16 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="128"
-   height="128"
-   viewBox="0 0 33.866666 33.866666"
+   width="36"
+   height="36"
+   viewBox="0 0 9.525 9.525"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.4 (unknown)"
-   sodipodi:docname="logo.svg">
+   sodipodi:docname="logo.svg"
+   inkscape:export-filename="/home/art/Sourcecode/Python/DynPy/icon_36.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -25,9 +28,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="3.871123"
-     inkscape:cx="65.255182"
-     inkscape:cy="69.741475"
+     inkscape:zoom="5.747611"
+     inkscape:cx="47.160667"
+     inkscape:cy="45.084411"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -53,24 +56,48 @@
      inkscape:label="Ebene 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-263.13334)">
+     transform="translate(0,-287.47501)">
     <rect
-       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.00026395;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.00007467;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect815"
-       width="33.866402"
-       height="33.866402"
-       x="0.000131975"
-       y="263.13348" />
+       width="9.5807533"
+       height="9.5807533"
+       x="3.7338261e-05"
+       y="287.41919"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:#fffcff;fill-opacity:0.178125;stroke:#ffffff;stroke-width:0.07485022px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.240625"
+       d="m 0.98611212,287.81563 5.16258698,4.31182 -1.933553,0.11601 4.0991328,4.33117 -6.3420547,-4.29249 1.527507,-0.71542 z"
+       id="path1301"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:9.00863075px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ff6600;fill-opacity:1;stroke:none;stroke-width:0.22521578"
-       x="0.42958465"
-       y="282.3782"
-       id="text819"><tspan
+       style="font-style:normal;font-weight:normal;font-size:2.41097736px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ff6600;fill-opacity:1;stroke:#fffffd;stroke-width:0.06027443;stroke-opacity:1"
+       x="0.28213662"
+       y="292.22943"
+       id="text819"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
          sodipodi:role="line"
          id="tspan817"
-         x="0.42958465"
-         y="282.3782"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ff6600;stroke-width:0.22521578">DynPy</tspan></text>
+         x="0.28213662"
+         y="292.22943"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ff6600;stroke:#fffffd;stroke-width:0.06027443;stroke-opacity:1">DynPy</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:1.03386235px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.02584656"
+       x="0.45562169"
+       y="293.9603"
+       id="text1305"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan1303"
+         x="0.45562169"
+         y="293.9603"
+         style="fill:#ffffff;stroke-width:0.02584656">Dynamic Python</tspan></text>
   </g>
 </svg>

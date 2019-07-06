@@ -1,0 +1,2 @@
+adb -s 5WH6R19329010194 install /home/art/Sourcecode/Python/DynPy/build-android-32/dynpy//build/outputs/apk/debug/dynpy-debug.apk
+adb -s 4JPNU17C29118711 install /home/art/Sourcecode/Python/DynPy/build-android-32/dynpy//build/outputs/apk/debug/dynpy-debug.apk

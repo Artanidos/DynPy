@@ -1,2 +1,4 @@
 .vscode/
 __pycache__/
+sysroot-android-32/
+build-android-32/
